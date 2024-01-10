@@ -54,3 +54,37 @@ button && button.addEventListener('click' , function(e){
         })
     }
 })
+    let filteredData = JSON.parse(JSON.stringify(data));
+    if (filter.color) {
+      filteredData = filteredData.filter((el) => {
+        return el.color == filter.color;
+      });
+    }
+
+    if (filter.type) {
+      filteredData = filteredData.filter((el) => {
+        return el.type == filter.type;
+      });
+    }
+
+    if (filter.minPrice) {
+      filteredData = filteredData.filter((el) => {
+        return el.price >= filter.minPrice;
+      });
+    }
+
+    if (filter.maxPrice) {
+      filteredData = filteredData.filter((el) => {
+        return el.price <= filter.maxPrice;
+      });
+    }
+
+    wrapper.innerHTML = "";
+    if (filteredData.length) {
+      filteredData.forEach((phone) => {
+        let card = createCard(phone);
+        wrapper.innerHTML += card;
+      });
+    } else {
+      wrapper.innerHTML = "Bunday mahsulot mavjud emas";
+    }
