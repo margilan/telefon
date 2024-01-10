@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Telefon bzor admin</title>
+</head>
+<body>
+     <div class="container">
+        <h1 class="text-center my-5">Bu yerga ma'lumot kiriting</h1>
+
+        <form id="form">
+            <div class="row">
+
+                <div class="mb-3 col-6">
+                    <label for="exampleFormControlInput1" class="form-label">Telefon nomi :</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name ...">
+                  </div>
+    
+                  <div class="mb-3 col-6">
+                    <label for="name" class="form-label">Telefon narxi:</label>
+                    <input type="number" class="form-control" id="price" placeholder=" Telefon narxini kiriting ...">
+                  </div>
+
+            </div>
+
+            <div class="row">
+                  <div class="mb-3 col-6">
+                    <label for="color" class="form-label">Telefonning rangi :</label>
+                    <select class="form-select" aria-label="Default select example" id="color">
+                        <option select>Telefon rangi </option>
+                        <option value="Oq">Oq</option>
+                        <option value="Kok">Ko'k</option>
+                        <option value="Yashil">Yashil</option>
+                        <option value="Qora">Qora</option>
+                        <option value="Pushti">Pushti</option>
+                        <option value="Jigarrang">Jigarrang</option>
+                      </select>
+                      </div>
+                      <div class="mb-3 col-6">
+                        <label for="type" class="form-label">Telefonning brendi :</label>
+                        <select class="form-select" aria-label="Default select example" id="type">
+                            <option selected>Telefon nomi </option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Iphone">Iphone</option>
+                            <option value="Lg">LG</option>
+                            <option value="Huawei">huawei</option>
+                            <option value="Redmi">Redmi</option>
+                            <option value="Honor">Honor</option>
+                          </select>
+                          </div>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="picture" class="form-label">Telefonni surati :</label>
+                <input type="text" class="form-control" id="picture" placeholder=" Telefonni suratini kiriting ...">
+              </div>
+
+            <div class="mb-3">
+                <label for="price" class="form-label">Telefon haqida izoh  :</label>
+                <textarea class="form-control" id="description" placeholder="Telefon haqida izoh kiriting ..." rows="3"></textarea>
+              </div>
+             
+           <button type="button" id="button" class="btn btn-outline-primary w-25">Saqlash</button>
+        </form>
+     </div>
+
+<script src = './js/main.js ' type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

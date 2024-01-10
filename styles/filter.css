@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color:white;
+    background-size: cover;
+    background-image: url(../img/14090913032023_bd473197c461193ea9b6d317f4c236910d065887.png);
+}
